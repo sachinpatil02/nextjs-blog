@@ -1,0 +1,26 @@
+.page { color: #18211f; }
+.nav { display: flex; justify-content: space-between; align-items: center; padding: 1.3rem 0 2.8rem; border-bottom: 1px solid #d9ded8; }
+.logo { color: #18211f; font-size: .94rem; font-weight: 700; letter-spacing: -.02em; }
+.logo:hover, .nav a:hover, .footer a:hover { text-decoration: none; }
+.logo span { display: inline-grid; place-items: center; width: 1.8rem; height: 1.8rem; margin-right: .45rem; color: #f4f4ed; background: #df6243; border-radius: 50%; font-size: .62rem; letter-spacing: 0; }
+.navLinks { display: flex; align-items: center; gap: 2rem; font-size: .82rem; font-weight: 600; }
+.navLinks a { color: #5e6862; }.navLinks .current { color: #df6243; }
+.hero { padding: 6rem 0 7rem; max-width: 850px; }
+.eyebrow, .sectionLabel, .miniLabel { color: #df6243; font-size: .68rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.eyebrow span { display: inline-block; width: 4rem; height: 1px; margin: 0 0 .2rem .55rem; background: #df6243; }
+.hero h1 { margin: 1.35rem 0 1.5rem; font-size: clamp(3.4rem, 8vw, 7.6rem); line-height: .92; letter-spacing: -.075em; font-weight: 700; }
+.accent { color: #df6243; font-family: Georgia, serif; font-weight: 400; letter-spacing: -.08em; }
+.heroCopy { max-width: 430px; margin: 0; color: #68716b; font-size: 1rem; line-height: 1.7; }
+.projectSection, .learningSection, .stackSection { display: grid; grid-template-columns: 18% 1fr; gap: 3rem; padding: 2rem 0 7rem; border-top: 1px solid #d9ded8; }
+.sectionLabel span { color: #9ca69f; margin-right: .65rem; }
+.projectList { display: grid; grid-template-columns: repeat(3, 1fr); gap: .8rem; }
+.projectCard { min-height: 420px; display: flex; flex-direction: column; justify-content: space-between; padding: 1.35rem; }
+.terracotta { color: #f9eee8; background: #df6243; }.green { color: #f4f4ed; background: #24443c; }.ink { color: #f4f4ed; background: #18211f; }
+.projectTop { display: flex; justify-content: space-between; font-size: .66rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; opacity: .72; }.projectTop span:first-child { font-size: 1rem; opacity: 1; }
+.projectBody h2 { max-width: 210px; margin: 0 0 .8rem; font-size: 2.1rem; line-height: .98; letter-spacing: -.065em; }.projectBody p { max-width: 220px; margin: 0; color: inherit; opacity: .72; font-size: .83rem; line-height: 1.55; }
+.projectCard ul { list-style: none; padding: 0; margin: 2rem 0 0; border-top: 1px solid rgba(255,255,255,.3); }.projectCard li { display: flex; justify-content: space-between; padding: .68rem 0; border-bottom: 1px solid rgba(255,255,255,.3); font-size: .72rem; }.projectCard li span { opacity: .7; }
+.learningContent, .stackContent { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }.learningContent h2, .stackContent h2 { margin: 0; font-size: clamp(2rem, 4vw, 3.4rem); line-height: 1; letter-spacing: -.065em; }.learningGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }.miniLabel { color: #8c978f; font-size: .62rem; }.learningGrid p { margin: 1rem 0 0; color: #68716b; font-size: .9rem; line-height: 1.8; }
+.stackSection { padding-bottom: 5rem; }.stackContent { align-items: start; }.stackTags { display: flex; flex-wrap: wrap; gap: .55rem; }.stackTags span { padding: .7rem .9rem; border: 1px solid #cbd2cb; color: #536059; font-size: .75rem; }
+.footer { display: flex; justify-content: space-between; padding: 1.5rem 0; border-top: 1px solid #cbd2cb; color: #8b958e; font-size: .72rem; }.footer a, .footer a:first-child { color: #18211f; font-weight: 600; }
+@media (max-width: 800px) { .projectList { grid-template-columns: 1fr; }.projectCard { min-height: 330px; }.projectSection, .learningSection, .stackSection { display: block; padding-bottom: 5rem; }.projectSection > .sectionLabel, .learningSection > .sectionLabel, .stackSection > .sectionLabel { margin-bottom: 1rem; }.learningContent, .stackContent { grid-template-columns: 1fr; gap: 2rem; } }
+@media (max-width: 640px) { .nav { padding-bottom: 1.5rem; }.navLinks { gap: .8rem; }.navLinks a:first-child { display: none; }.hero { padding: 4rem 0 5rem; }.hero h1 { font-size: 4rem; }.learningGrid { grid-template-columns: 1fr; gap: 1.5rem; }.footer { flex-wrap: wrap; gap: .7rem; }.footer span { display: none; } }
